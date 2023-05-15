@@ -17,17 +17,23 @@ F2=xy’z+x’y’z+w’xy+wx’y+wxy
  Logic gates are electronic circuits which perform logical functions on one or more inputs to produce one output.
 
 ## Procedure
-### Step 1: Create a project with required entities.
+### Step 1:
+ Create a project with required entities.
 
-### Step 2: Create a module along with respective file name.
+### Step 2: 
+Create a module along with respective file name.
 
-### Step 3: Run the respective programs for the given boolean equations.
+### Step 3: 
+Run the respective programs for the given boolean equations.
 
-### Step 4: Run the module and get the respective RTL outputs.
+### Step 4: 
+Run the module and get the respective RTL outputs.
 
-### Step 5: Create university program(VWF) for getting timing diagram.
+### Step 5: 
+Create university program(VWF) for getting timing diagram.
 
-### Step 6: Give the respective inputs for timing diagram and obtain the results.
+### Step 6: 
+Give the respective inputs for timing diagram and obtain the results.
 ## Program:
 Program to implement the given logic function and to verify its operations in quartus using Verilog programming.
 ### Developed by: Sarankumar J
@@ -63,12 +69,12 @@ endmodule
 ```
 ## Output:-
 ## Logic Diagram:-
-![git](./logic diagram.png)
+![git](./logic%20diagram.png)
 ## RTL
 ### For F1
-![git](./f1 rtl.png)
+![git](./f1%20rtl.png)
 ### For F2
-![git](./f2 rtl.png)
+![git](./f2%20rtl.png)
 ## Timing Diagram:-
 ### For F1
 ![git](./f1.png)
