@@ -62,9 +62,17 @@ assign F2= p | q | r | s | t;
 endmodule
 ```
 ## Output:-
+## Logic Diagram:-
+![git](./logic diagram.png)
 ## RTL
-
+### For F1
+![git](./f1 rtl.png)
+### For F2
+![git](./f2 rtl.png)
 ## Timing Diagram:-
-
+### For F1
+![git](./f1.png)
+### For F2
+![git](./f2.png)
 ## Result:
 Thus the given logic functions are implemented using  and their operations are verified using Verilog programming.
