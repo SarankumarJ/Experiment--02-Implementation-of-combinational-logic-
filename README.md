@@ -32,41 +32,39 @@ F2=xy’z+x’y’z+w’xy+wx’y+wxy
 Program to implement the given logic function and to verify its operations in quartus using Verilog programming.
 ### Developed by: Sarankumar J
 ### RegisterNumber:  212221230087
-### NAND OPERATION :-
-~~~
-module fourexp(A,B,C,D,F);
-input A,B,C,D;
-output F;
-wire P,Q,R;
-assign P = C&(~B)&(~A);
-assign Q = D&(~C)&(~A);
-assign R = (~C)&B&(~A);
-assign F = (~P&~Q&~R);
-endmodule
-~~~
-### NOR OPERATION :-
 ```
-module fourexp(A,B,C,D,F);
+F1= A’B’C’D’+AC’D’+B’CD’+A’BCD+BC’D
+
+module imp(A,B,C,D,F1);
 input A,B,C,D;
-output F;
-wire P,Q,R,S;
-assign P = C&(~B)&A;
-assign Q = D&(~C)&A;
-assign R = C&(~B)&A;
-assign S = ~(P|Q|R);
-assign F = ~S;
+output F1;
+wire p,q,r,s,t;
+assign p = (~A & ~B & ~C & ~D);
+assign q = (A & ~C & ~D);
+assign r = (~B & C & ~D);
+assign s = (~A & B & C & D);
+assign t = (B & ~C & D);
+assign F1 = p | q | r | s | t;
+endmodule
+
+F2=xy’z+x’y’z+w’xy+wx’y+wxy
+
+module imp(w,x,y,z,F2);
+input w,x,y,z;
+output F2;
+wire p,q,r,s,t;
+assign p= (x & ~y & z);
+assign q= (~x & ~y & z);
+assign r= (~w & x & y);
+assign s= (w & ~x & y);
+assign t= (w & x & y);
+assign F2= p | q | r | s | t;
 endmodule
 ```
 ## Output:-
 ## RTL
-### NAND OPERATION
-![git](./232980222-18379423-c521-4978-9705-ded581596f9b.png)
-### NOR OPERATION
-![git](./nor.png)
+
 ## Timing Diagram:-
-### NAND OPERATION
-![git](./nand%20time.png)
-### NOR OPERATION
-![git](./nor%20time.png)
+
 ## Result:
 Thus the given logic functions are implemented using  and their operations are verified using Verilog programming.
